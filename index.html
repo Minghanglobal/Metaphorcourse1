@@ -1,0 +1,125 @@
+# Summary of the Storytelling & Coaching Session by Marilyn Atkinson
+
+# Define the summaries
+summaries = [
+    "The session emphasized the importance of storytelling as a tool for connection, engagement, and coaching.",
+    "Marilyn Atkinson highlighted that good storytelling is about creating a present-moment experience rather than a historical account.",
+    "Participants explored using 'you' instead of 'I' to deepen connection and resonance with the audience.",
+    "Self-trust and authentic sharing were encouraged as essential aspects of effective storytelling.",
+    "The connection between storytelling and coaching was explored, showing how stories can help individuals shift perspectives.",
+    "Homework was assigned, including daily storytelling, writing a meaningful story, and recording dreams for next week's session."
+]
+
+# Define key takeaways
+key_takeaways = [
+    {
+        "Topic": "Storytelling",
+        "Details": [
+            "Storytelling is about creating an emotional connection, not just presenting facts.",
+            "A good story brings people into the moment rather than just recounting the past.",
+            "Metaphors enhance communication by engaging emotions and making stories more immersive."
+        ]
+    },
+    {
+        "Topic": "Presence & Connection",
+        "Details": [
+            "Being present while telling a story builds trust and connection.",
+            "Shared human experiences create resonance and common ground.",
+            "Listeners should feel like they are inside the experience, not just observing."
+        ]
+    },
+    {
+        "Topic": "Self-Trust & Authenticity",
+        "Details": [
+            "Telling stories from the heart strengthens self-trust.",
+            "Speaking about meaningful moments rather than failures builds confidence.",
+            "Trust that your story will find its audience without overanalyzing."
+        ]
+    },
+    {
+        "Topic": "Techniques for Effective Storytelling",
+        "Details": [
+            "Use 'you' instead of 'I' to deepen the connection.",
+            "Step into the present tense for immersive storytelling.",
+            "Engage sensory details: sight, sound, smell, touch, and emotion.",
+            "Focus on value-driven stories that inspire the audience."
+        ]
+    },
+    {
+        "Topic": "Storytelling & Coaching",
+        "Details": [
+            "Coaching and storytelling share the goal of helping individuals discover possibilities.",
+            "A powerful story can shift mindsets, such as transforming a scarcity mindset into an abundance mindset.",
+            "Listening and presence in storytelling are key to effective coaching."
+        ]
+    },
+    {
+        "Topic": "Homework & Practice",
+        "Details": [
+            "Tell at least one small story per day.",
+            "Write down one story that is deeply meaningful.",
+            "Record and recall dreams for next week's discussion on unconscious insights."
+        ]
+    }
+]
+
+# Define quizzes
+quizzes = [
+    {
+        "Question": "What is the primary purpose of using metaphors in storytelling?",
+        "Options": [
+            "a) To impress the audience with literary skills",
+            "b) To communicate deeper meaning and engage emotions",
+            "c) To make a story more complicated",
+            "d) To avoid direct communication"
+        ],
+        "Answer": "b) To communicate deeper meaning and engage emotions"
+    },
+    {
+        "Question": "Which storytelling technique enhances the connection between the speaker and the listener?",
+        "Options": [
+            "a) Speaking in third person (he/she/they)",
+            "b) Using 'you' instead of 'I'",
+            "c) Listing chronological events without emotions",
+            "d) Avoiding personal experiences"
+        ],
+        "Answer": "b) Using 'you' instead of 'I'"
+    },
+    {
+        "Question": "In storytelling, what does stepping into the present moment help achieve?",
+        "Options": [
+            "a) Makes the story sound more professional",
+            "b) Helps the audience feel the experience as if it’s happening now",
+            "c) Keeps the story short and simple",
+            "d) Creates distance between the storyteller and the listener"
+        ],
+        "Answer": "b) Helps the audience feel the experience as if it’s happening now"
+    }
+]
+
+# Function to display structured output
+def display_summary():
+    print("\n===== SUMMARY OF THE SESSION =====\n")
+    for idx, summary in enumerate(summaries, 1):
+        print(f"{idx}. {summary}")
+
+def display_key_takeaways():
+    print("\n===== KEY TAKEAWAYS =====\n")
+    for takeaway in key_takeaways:
+        print(f"**{takeaway['Topic']}**:")
+        for detail in takeaway["Details"]:
+            print(f"  - {detail}")
+        print()
+
+def display_quizzes():
+    print("\n===== QUIZZES =====\n")
+    for idx, quiz in enumerate(quizzes, 1):
+        print(f"**Question {idx}:** {quiz['Question']}")
+        for option in quiz["Options"]:
+            print(f"  {option}")
+        print(f"**Correct Answer:** {quiz['Answer']}\n")
+
+# Display all information
+display_summary()
+display_key_takeaways()
+display_quizzes()
